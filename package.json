@@ -1,0 +1,23 @@
+{
+  "name": "test-platter",
+  "version": "1.0.0",
+  "description": "A technical test for Platter by Remi Fortier",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mizujin/test-platter.git"
+  },
+  "author": "Remi Fortier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mizujin/test-platter/issues"
+  },
+  "homepage": "https://github.com/mizujin/test-platter#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}
