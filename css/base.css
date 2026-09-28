@@ -1,0 +1,11 @@
+.os-scrollbar {
+    --os-size: 8px!important;
+    --os-handle-bg: #000!important;
+    --os-handle-bg-hover: #000!important;
+    --os-track-bg: #DDD6D7!important;
+    --os-track-bg-hover: #DDD6D7!important;
+    --os-track-bg-active: #DDD6D7!important;
+    --os-handle-perpendicular-size: 4px!important;
+    --os-handle-perpendicular-size-hover: 6px!important;
+    --os-handle-perpendicular-size-active: 6px!important;
+}
