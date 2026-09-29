@@ -65,6 +65,12 @@ window.addEventListener('DOMContentLoaded', () => {
 		})
 	);
 
+	mobileQuery.matches && productCards.forEach((card, index) => {
+		if (index >= PRODUCT_CARDS_TO_SHOW) {
+			card.classList.add('hidden');
+		}
+	});
+
 	showMoreButton.addEventListener('click', () => {
 		productCards.forEach((card, index) => {
 			if (index >= PRODUCT_CARDS_TO_SHOW) {
