@@ -4,7 +4,8 @@
   "description": "A technical test for Platter by Remi Fortier",
   "main": "index.html",
   "scripts": {
-    "watch": "npx @tailwindcss/cli -i ./css/input.css -o ./css/main.css --watch"
+    "watch": "npx @tailwindcss/cli -i ./css/input.css -o ./css/main.css --watch",
+    "dev": "npx vite"
   },
   "repository": {
     "type": "git",

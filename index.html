@@ -1,17 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Platter technical test section</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css" />
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<title>Platter technical test section</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/base.css" />
 </head>
-<body></body>
+
+<body>
+	<section class="py-9 px-6 md:py-20 md:pl-32">
+		<div class="flex flex-col md:flex-row justify-between items-center mb-6 md:mb-[38px] md:pr-32">
+			<header>
+				<h1 class="font-source-serif font-extrabold text-center md:text-left text-[28px] md:text-heading">Best Sellers
+				</h1>
+			</header>
+			<nav class="hidden md:block">
+				<ul>
+					<li><a href="/collections/all"
+							class="font-poppins flex items-center gap-x-2 text-sm text-olive-green font-semibold tracking-[3%]">
+							Shop All Best Sellers
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+								<path stroke="#5c553a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									d="M3.333 10h13.334m-5 5 5-5-5-5" />
+							</svg>
+						</a></li>
+				</ul>
+			</nav>
+		</div>
+		<main>
+			<section id="best-sellers" data-overlayscrollbars-initialize>
+				<ul data-scroll-container class="grid grid-cols-2 gap-3 md:gap-x-6 md:flex md:flex-row pb-12">
+					<li data-product-card>
+						<section class="group flex flex-col align-center justify-center pb-4">
+							<div class="rounded-[10px] mb-2 md:mb-4 relative overflow-hidden w-full aspect-square md:w-[355px]">
+								<div
+									class="absolute z-1 bg-white top-1 left-1 md:top-2 md:left-2 rounded-full font-bebas-neue text-tiny md:text-xxs tracking-[4%] md:tracking-[6%] uppercase border px-2 py-1">
+									Best Seller</div>
+								<img
+									class="absolute opacity-100 transition-opacity duration-300 group-hover:opacity-0 object-cover w-full h-full"
+									src="./assets/images/product-media-1.jpg" alt="Product 1" width="355" height="355" />
+								<img
+									class="alt opacity-0 transition-opacity duration-300 group-hover:opacity-100 object-cover w-full h-full"
+									src="./assets/images/alt-product-card.jpg" alt="Product 1 alt" width="355" height="355" />
+							</div>
+							<div class="px-2 md:px-3 flex flex-col gap-y-2">
+								<h2 class="font-bebas-neue text-brand-black text-base md:text-lg tracking-[3%] uppercase">Outside
+									Vibes T-Shirt Sunshine</h2>
+								<div class="flex items-center gap-x-0.5 md:gap-x-1">
+									<div class="star-reviews" style="--star-value:4.4" role="img" aria-label="Rated 4.4 out of 5">
+										<span class="star-reviews-fill"></span>
+									</div>
+									<span class="font-poppins text-[11px] md:text-xxs leading-1 text-light-grey">1,234 Reviews</span>
+								</div>
+								<span class="font-poppins text-base font-medium">$104.95</span>
+							</div>
+						</section>
+					</li>
+					<li data-product-card>
+						<section class="group flex flex-col align-center justify-center pb-4">
+							<div class="rounded-[10px] mb-2 md:mb-4 relative overflow-hidden w-full aspect-square md:w-[355px]">
+								<div
+									class="absolute z-1 bg-white top-1 left-1 md:top-2 md:left-2 rounded-full font-bebas-neue text-tiny md:text-xxs tracking-[4%] md:tracking-[6%] uppercase border px-2 py-1">
+									Best Seller</div>
+								<div
+									class="absolute z-1 bg-[#5C7962] text-neutral-white top-1 right-1 md:top-2 md:right-2 rounded-full font-bebas-neue text-tiny md:text-xxs tracking-[6%] uppercase border border-black px-2 py-1">
+									Save 15%</div>
+								<img
+									class="absolute opacity-100 transition-opacity duration-300 group-hover:opacity-0 object-cover w-full h-full"
+									src="./assets/images/product-media-2.jpg" alt="Product 2" width="355" height="355" />
+								<img
+									class="alt opacity-0 transition-opacity duration-300 group-hover:opacity-100 object-cover w-full h-full"
+									src="./assets/images/alt-product-card.jpg" alt="Product 2 alt" width="355" height="355" />
+							</div>
+							<div class="px-2 md:px-3 flex flex-col gap-y-2">
+								<h2 class="font-bebas-neue text-brand-black text-base md:text-lg tracking-[3%] uppercase">Hike Bottle
+									Outside Vibes Forest Green</h2>
+								<div class="flex items-center gap-x-0.5 md:gap-x-1">
+									<div class="star-reviews" style="--star-value:5" role="img" aria-label="Rated 5 out of 5">
+										<span class="star-reviews-fill"></span>
+									</div>
+									<span class="font-poppins text-[11px] md:text-xxs leading-1 text-light-grey">1,234 Reviews</span>
+								</div>
+								<span class="font-poppins text-base font-medium">$104.95</span>
+							</div>
+						</section>
+					</li>
+					<li data-product-card>
+						<section class="group flex flex-col align-center justify-center pb-4">
+							<div class="rounded-[10px] mb-2 md:mb-4 relative overflow-hidden w-full aspect-square md:w-[355px]">
+								<div
+									class="absolute z-1 bg-white top-1 left-1 md:top-2 md:left-2 rounded-full font-bebas-neue text-tiny md:text-xxs tracking-[4%] md:tracking-[6%] uppercase border px-2 py-1">
+									Best Seller</div>
+								<img
+									class="absolute opacity-100 transition-opacity duration-300 group-hover:opacity-0 object-cover w-full h-full"
+									src="./assets/images/product-media-3.jpg" alt="Product 3" width="355" height="355" />
+								<img
+									class="alt opacity-0 transition-opacity duration-300 group-hover:opacity-100 object-cover w-full h-full"
+									src="./assets/images/alt-product-card.jpg" alt="Product 3 alt" width="355" height="355" />
+							</div>
+							<div class="px-2 md:px-3 flex flex-col gap-y-2">
+								<h2 class="font-bebas-neue text-brand-black text-base md:text-lg tracking-[3%] uppercase">Outside
+									Vibes T-Shirt Sunshine</h2>
+								<div class="flex items-center gap-x-0.5 md:gap-x-1">
+									<div class="star-reviews" style="--star-value:4.4" role="img" aria-label="Rated 4.4 out of 5">
+										<span class="star-reviews-fill"></span>
+									</div>
+									<span class="font-poppins text-[11px] md:text-xxs leading-1 text-light-grey">1,234 Reviews</span>
+								</div>
+								<span class="font-poppins text-base font-medium">$104.95</span>
+							</div>
+						</section>
+					</li>
+					<li data-product-card>
+						<section class="group flex flex-col align-center justify-center pb-4">
+							<div class="rounded-[10px] mb-2 md:mb-4 relative overflow-hidden w-full aspect-square md:w-[355px]">
+								<div
+									class="absolute z-1 bg-white top-1 left-1 md:top-2 md:left-2 rounded-full font-bebas-neue text-tiny md:text-xxs tracking-[4%] md:tracking-[6%] uppercase border px-2 py-1">
+									Best Seller</div>
+								<div
+									class="absolute z-1 bg-[#5C7962] text-neutral-white top-1 right-1 md:top-2 md:right-2 rounded-full font-bebas-neue text-tiny md:text-xxs tracking-[6%] uppercase border border-black px-2 py-1">
+									Save 15%</div>
+								<img
+									class="absolute opacity-100 transition-opacity duration-300 group-hover:opacity-0 object-cover w-full h-full"
+									src="./assets/images/product-media-4.jpg" alt="Product 4" width="355" height="355" />
+								<img
+									class="alt opacity-0 transition-opacity duration-300 group-hover:opacity-100 object-cover w-full h-full"
+									src="./assets/images/alt-product-card.jpg" alt="Product 4 alt" width="355" height="355" />
+							</div>
+							<div class="px-2 md:px-3 flex flex-col gap-y-2">
+								<h2 class="font-bebas-neue text-brand-black text-base md:text-lg tracking-[3%] uppercase">Outside Vibes Cap Forest Green</h2>
+								<div class="flex items-center gap-x-0.5 md:gap-x-1">
+									<div class="star-reviews" style="--star-value:4.4" role="img" aria-label="Rated 4.4 out of 5">
+										<span class="star-reviews-fill"></span>
+									</div>
+									<span class="font-poppins text-[11px] md:text-xxs leading-1 text-light-grey">1,234 Reviews</span>
+								</div>
+								<span class="font-poppins text-base font-medium">$104.95</span>
+							</div>
+						</section>
+					</li>
+					<li data-product-card>
+						<section class="group flex flex-col align-center justify-center pb-4">
+							<div class="rounded-[10px] mb-2 md:mb-4 relative overflow-hidden w-full aspect-square md:w-[355px]">
+								<div
+									class="absolute z-1 bg-white top-1 left-1 md:top-2 md:left-2 rounded-full font-bebas-neue text-tiny md:text-xxs tracking-[4%] md:tracking-[6%] uppercase border px-2 py-1">
+									Best Seller</div>
+								<img
+									class="absolute opacity-100 transition-opacity duration-300 group-hover:opacity-0 object-cover w-full h-full"
+									src="./assets/images/product-media-5.jpg" alt="Product 5" width="355" height="355" />
+								<img
+									class="alt opacity-0 transition-opacity duration-300 group-hover:opacity-100 object-cover w-full h-full"
+									src="./assets/images/alt-product-card.jpg" alt="Product 5 alt" width="355" height="355" />
+							</div>
+							<div class="px-2 md:px-3 flex flex-col gap-y-2">
+								<h2 class="font-bebas-neue text-brand-black text-base md:text-lg tracking-[3%] uppercase">Rest in Nature T-Shirt Charcoal </h2>
+								<div class="flex items-center gap-x-0.5 md:gap-x-1">
+									<div class="star-reviews" style="--star-value:4.4" role="img" aria-label="Rated 4.4 out of 5">
+										<span class="star-reviews-fill"></span>
+									</div>
+									<span class="font-poppins text-[11px] md:text-xxs leading-1 text-light-grey">1,234 Reviews</span>
+								</div>
+								<span class="font-poppins text-base font-medium">$104.95</span>
+							</div>
+						</section>
+					</li>
+					<li data-product-card>
+						<section class="group flex flex-col align-center justify-center pb-4">
+							<div class="rounded-[10px] mb-2 md:mb-4 relative overflow-hidden w-full aspect-square md:w-[355px]">
+								<div
+									class="absolute z-1 bg-white top-1 left-1 md:top-2 md:left-2 rounded-full font-bebas-neue text-tiny md:text-xxs tracking-[4%] md:tracking-[6%] uppercase border px-2 py-1">
+									Best Seller</div>
+								<img
+									class="absolute opacity-100 transition-opacity duration-300 group-hover:opacity-0 object-cover w-full h-full"
+									src="./assets/images/product-media-6.jpg" alt="Product 6" width="355" height="355" />
+								<img
+									class="alt opacity-0 transition-opacity duration-300 group-hover:opacity-100 object-cover w-full h-full"
+									src="./assets/images/alt-product-card.jpg" alt="Product 6 alt" width="355" height="355" />
+							</div>
+							<div class="px-2 md:px-3 flex flex-col gap-y-2">
+								<h2 class="font-bebas-neue text-brand-black text-base md:text-lg tracking-[3%] uppercase">Forest dweller T-shirt Green</h2>
+								<div class="flex items-center gap-x-0.5 md:gap-x-1">
+									<div class="star-reviews" style="--star-value:5" role="img" aria-label="Rated 5 out of 5">
+										<span class="star-reviews-fill"></span>
+									</div>
+									<span class="font-poppins text-[11px] md:text-xxs leading-1 text-light-grey">1,234 Reviews</span>
+								</div>
+								<span class="font-poppins text-base font-medium">$104.95</span>
+							</div>
+						</section>
+					</li>
+					<li data-product-card>
+						<section class="group flex flex-col align-center justify-center pb-4">
+							<div class="rounded-[10px] mb-2 md:mb-4 relative overflow-hidden w-full aspect-square md:w-[355px]">
+								<div
+									class="absolute z-1 bg-white top-1 left-1 md:top-2 md:left-2 rounded-full font-bebas-neue text-tiny md:text-xxs tracking-[4%] md:tracking-[6%] uppercase border px-2 py-1">
+									Best Seller</div>
+								<img
+									class="absolute opacity-100 transition-opacity duration-300 group-hover:opacity-0 object-cover w-full h-full"
+									src="./assets/images/product-media-7.jpg" alt="Product 7" width="355" height="355" />
+								<img
+									class="alt opacity-0 transition-opacity duration-300 group-hover:opacity-100 object-cover w-full h-full"
+									src="./assets/images/alt-product-card.jpg" alt="Product 7 alt" width="355" height="355" />
+							</div>
+							<div class="px-2 md:px-3 flex flex-col gap-y-2">
+								<h2 class="font-bebas-neue text-brand-black text-base md:text-lg tracking-[3%] uppercase">Outside
+									Vibes T-Shirt Sunshine</h2>
+								<div class="flex items-center gap-x-0.5 md:gap-x-1">
+									<div class="star-reviews" style="--star-value:4.4" role="img" aria-label="Rated 4.4 out of 5">
+										<span class="star-reviews-fill"></span>
+									</div>
+									<span class="font-poppins text-[11px] md:text-xxs leading-1 text-light-grey">1,234 Reviews</span>
+								</div>
+								<span class="font-poppins text-base font-medium">$104.95</span>
+							</div>
+						</section>
+					</li>
+					<li data-product-card>
+						<section class="group flex flex-col align-center justify-center pb-4">
+							<div class="rounded-[10px] mb-2 md:mb-4 relative overflow-hidden w-full aspect-square md:w-[355px]">
+								<div
+									class="absolute z-1 bg-white top-1 left-1 md:top-2 md:left-2 rounded-full font-bebas-neue text-tiny md:text-xxs tracking-[4%] md:tracking-[6%] uppercase border px-2 py-1">
+									Best Seller</div>
+								<div
+									class="absolute z-1 bg-[#5C7962] text-neutral-white top-1 right-1 md:top-2 md:right-2 rounded-full font-bebas-neue text-tiny md:text-xxs tracking-[6%] uppercase border border-black px-2 py-1">
+									Save 15%</div>
+								<img
+									class="absolute opacity-100 transition-opacity duration-300 group-hover:opacity-0 object-cover w-full h-full"
+									src="./assets/images/product-media-8.jpg" alt="Product 8" width="355" height="355" />
+								<img
+									class="alt opacity-0 transition-opacity duration-300 group-hover:opacity-100 object-cover w-full h-full"
+									src="./assets/images/alt-product-card.jpg" alt="Product 8 alt" width="355" height="355" />
+							</div>
+							<div class="px-2 md:px-3 flex flex-col gap-y-2">
+								<h2 class="font-bebas-neue text-brand-black text-base md:text-lg tracking-[3%] uppercase">Mountain River Cap Grey</h2>
+								<div class="flex items-center gap-x-0.5 md:gap-x-1">
+									<div class="star-reviews" style="--star-value:4.4" role="img" aria-label="Rated 4.4 out of 5">
+										<span class="star-reviews-fill"></span>
+									</div>
+									<span class="font-poppins text-[11px] md:text-xxs leading-1 text-light-grey">1,234 Reviews</span>
+								</div>
+								<span class="font-poppins text-base font-medium">$104.95</span>
+							</div>
+						</section>
+					</li>
+					<li data-product-card>
+						<section class="group flex flex-col align-center justify-center pb-4">
+							<div class="rounded-[10px] mb-2 md:mb-4 relative overflow-hidden w-full aspect-square md:w-[355px]">
+								<div
+									class="absolute z-1 bg-white top-1 left-1 md:top-2 md:left-2 rounded-full font-bebas-neue text-tiny md:text-xxs tracking-[4%] md:tracking-[6%] uppercase border px-2 py-1">
+									Best Seller</div>
+								<img
+									class="absolute opacity-100 transition-opacity duration-300 group-hover:opacity-0 object-cover w-full h-full"
+									src="./assets/images/product-media-9.jpg" alt="Product 9" width="355" height="355" />
+								<img
+									class="alt opacity-0 transition-opacity duration-300 group-hover:opacity-100 object-cover w-full h-full"
+									src="./assets/images/alt-product-card.jpg" alt="Product 9 alt" width="355" height="355" />
+							</div>
+							<div class="px-2 md:px-3 flex flex-col gap-y-2">
+								<h2 class="font-bebas-neue text-brand-black text-base md:text-lg tracking-[3%] uppercase">Firecamp Cap Amber</h2>
+								<div class="flex items-center gap-x-0.5 md:gap-x-1">
+									<div class="star-reviews" style="--star-value:4" role="img" aria-label="Rated 4 out of 5">
+										<span class="star-reviews-fill"></span>
+									</div>
+									<span class="font-poppins text-[11px] md:text-xxs leading-1 text-light-grey">1,234 Reviews</span>
+								</div>
+								<span class="font-poppins text-base font-medium">$104.95</span>
+							</div>
+						</section>
+					</li>
+					<li data-product-card>
+						<section class="group flex flex-col align-center justify-center pb-4">
+							<div class="rounded-[10px] mb-2 md:mb-4 relative overflow-hidden w-full aspect-square md:w-[355px]">
+								<div
+									class="absolute z-1 bg-white top-1 left-1 md:top-2 md:left-2 rounded-full font-bebas-neue text-tiny md:text-xxs tracking-[4%] md:tracking-[6%] uppercase border px-2 py-1">
+									Best Seller</div>
+								<img
+									class="absolute opacity-100 transition-opacity duration-300 group-hover:opacity-0 object-cover w-full h-full"
+									src="./assets/images/product-media-10.jpg" alt="Product 10" width="355" height="355" />
+								<img
+									class="alt opacity-0 transition-opacity duration-300 group-hover:opacity-100 object-cover w-full h-full"
+									src="./assets/images/alt-product-card.jpg" alt="Product 10 alt" width="355" height="355" />
+							</div>
+							<div class="px-2 md:px-3 flex flex-col gap-y-2">
+								<h2 class="font-bebas-neue text-brand-black text-base md:text-lg tracking-[3%] uppercase">Outside
+									Vibes T-Shirt Sunshine</h2>
+								<div class="flex items-center gap-x-0.5 md:gap-x-1">
+									<div class="star-reviews" style="--star-value:3" role="img" aria-label="Rated 3 out of 5">
+										<span class="star-reviews-fill"></span>
+									</div>
+									<span class="font-poppins text-[11px] md:text-xxs leading-1 text-light-grey">1,234 Reviews</span>
+								</div>
+								<span class="font-poppins text-base font-medium">$104.95</span>
+							</div>
+						</section>
+					</li>
+				</ul>
+				<button type="button" id="show-more-button"
+					class="md:hidden w-full bg-brand-black text-neutral-white font-poppins font-semibold text-base tracking-[3%] py-4 rounded-full">Show
+					More</button>
+			</section>
+		</main>
+	</section>
+	<script type="module" src="js/main.js"></script>
+</body>
+
 </html>
