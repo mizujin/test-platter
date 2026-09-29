@@ -4,7 +4,8 @@
   "description": "A technical test for Platter by Remi Fortier",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "npx @tailwindcss/cli -i ./css/input.css -o ./css/main.css --watch",
+    "dev": "npx vite"
   },
   "repository": {
     "type": "git",
@@ -15,9 +16,15 @@
   "bugs": {
     "url": "https://github.com/mizujin/test-platter/issues"
   },
+  "type": "module",
   "homepage": "https://github.com/mizujin/test-platter#readme",
   "dependencies": {
     "@tailwindcss/cli": "^4.3.3",
+    "@tailwindcss/vite": "^4.3.3",
+    "overlayscrollbars": "^2.16.0",
     "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "vite": "^8.3.1"
   }
 }

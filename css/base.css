@@ -1,0 +1,43 @@
+.os-scrollbar {
+    --os-size: 8px!important;
+    --os-handle-bg: #000!important;
+    --os-handle-bg-hover: #000!important;
+    --os-track-bg: #DDD6D7!important;
+    --os-track-bg-hover: #DDD6D7!important;
+    --os-track-bg-active: #DDD6D7!important;
+    --os-handle-perpendicular-size: 4px!important;
+    --os-handle-perpendicular-size-hover: 6px!important;
+    --os-handle-perpendicular-size-active: 6px!important;
+}
+
+.star-reviews {
+    position: relative;
+    display: inline-block;
+    font-size: 0.5625rem;
+    line-height: 1;
+    color: #CFCFCF;
+}
+
+@media screen and (min-width: 768px) {
+    .star-reviews {
+        font-size: 0.75rem;
+    }
+}
+
+.star-reviews::before {
+    content: "★★★★★";
+}
+
+.star-reviews-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #231F20;
+    width: calc(var(--star-value) / 5 * 100%);
+}
+
+.star-reviews-fill::before {
+    content: "★★★★★";
+}
